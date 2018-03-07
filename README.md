@@ -82,6 +82,6 @@ encontrar um local para o Union-Set.
 [Calendário]: #calendário
 [Informes]: #informes
 [TPs]: #tps
-[TPs]: #bibliografia
+[Bibliografia]: #bibliografia
 [Listas]: https://github.com/flaviovdf/estruturas-de-dados/listas
 [Exemplos]: https://github.com/flaviovdf/estruturas-de-dados
