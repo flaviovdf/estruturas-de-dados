@@ -1,5 +1,5 @@
-| [Slides] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Listas] |
-|----------|------------|--------------|------------|-------|----------|
+| [Slides] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Listas] | [Bibliografia] |
+|----------|------------|--------------|------------|-------|----------|----------------|
 - - -
 
 # DCC004: Estruturas de Dados (~~AEDS2~~)
@@ -65,9 +65,23 @@ encontrar um local para o Union-Set.
 
 ## TPs
 
+## Bibliografia
+
+
+  1. [Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms) <br>
+     Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein <br>
+     Terceira edição ou mais recente <br>
+     **Cópias na biblioteca, versões baratas no Abe Books**
+
+  1. [Projeto de Algoritmos](www.dcc.ufmg.br/algoritmos/) <br>
+     Nivio Ziviane <br>
+     Terceira Edição <br>
+     **Português. Cópias na biblioteca**
+
 [Slides]: https://drive.google.com/open?id=0B0ryAvcYobs0RWtXV2hWeUdSUjQ
 [Calendário]: #calendário
 [Informes]: #informes
 [TPs]: #tps
+[TPs]: #bibliografia
 [Listas]: https://github.com/flaviovdf/estruturas-de-dados/listas
 [Exemplos]: https://github.com/flaviovdf/estruturas-de-dados
