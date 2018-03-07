@@ -10,7 +10,7 @@ Aulas: Terças e Quintas 16:40-18:20
 
 Práticas e Monitorias: Sextas 11h até 12h
 
-Sala Teórica: 312 (CAD1)
+Sala Teórica: 313 (CAD1)
 
 Sala Prática: 1009 e 1010. 11h até 12h Sextas (Icex)
 
