@@ -24,5 +24,6 @@
 
 1. Fibonacci
 1. Exponencial
+1. Chaos Eq
 1. Batmacumba
 1. Select Sort Recursivo
