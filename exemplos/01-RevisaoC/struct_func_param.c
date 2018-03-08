@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 			date1.month, date1.year);
 	printf("date2: %d/%d/%d\n", date2.day,
 			date2.month, date2.year);
-	change_params(date1, *date2);
+	change_params(date1, &date2);
 	printf("\nAFTER\n");
 	printf("date1: %d/%d/%d\n", date1.day,
 			date1.month, date1.year);

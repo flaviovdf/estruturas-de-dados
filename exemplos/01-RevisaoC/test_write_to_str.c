@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
 	char rw[] = "this string is allocated "
 		"in the stack and can be changed.";
 	char *ro = "this string may be in read-only "

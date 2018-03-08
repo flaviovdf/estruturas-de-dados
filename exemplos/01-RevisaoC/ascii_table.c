@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
 	/* first printable char: */
 	const unsigned char first= 32;
 	/* last printable char: */

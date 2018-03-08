@@ -14,8 +14,7 @@ struct date_opt {
 	long year;
 };
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
 	struct date date1 = { 12, 12, 2012 };
 	/* normal initialization: */
 	struct date date2;
@@ -24,11 +23,9 @@ int main(int argc, char **argv)
 	date2.year = 2012;
 	struct date_opt dopt1 = { 12, 12, 2012 };
 
-	printf("sizeof(struct date) = %d\n",
-		sizeof(date1));
+	printf("sizeof(struct date) = %lu\n", sizeof(date1));
 	int size = 2*sizeof(char) + sizeof(long);
 	printf("expected sizeof(struct date_opt)"
-		" = %d\n", size); 
-	printf("sizeof(struct date_opt) = %d\n",
-		sizeof(dopt1));
+		" = %d\n", size);
+	printf("sizeof(struct date_opt) = %lu\n", sizeof(dopt1));
 }
