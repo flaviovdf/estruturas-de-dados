@@ -1,5 +1,5 @@
-| [Slides] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Listas] |
-|----------|------------|--------------|------------|-------|----------|
+| [Slides] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Listas] | [Bibliografia] |
+|----------|------------|--------------|------------|-------|----------|----------------|
 - - -
 
 # DCC004: Estruturas de Dados (~~AEDS2~~)
@@ -8,9 +8,11 @@ Professor: Flavio Figueiredo
 
 Aulas: Terças e Quintas 16:40-18:20
 
-Sala Teórica: 312 (CAD1)
+Práticas e Monitorias: Sextas 11h até 12h
 
-Sala Prática: ?? (Icex)
+Sala Teórica: 313 (CAD1)
+
+Sala Prática: 1009 e 1010. 11h até 12h Sextas (Icex)
 
 ## Informes
 
@@ -65,9 +67,23 @@ encontrar um local para o Union-Set.
 
 ## TPs
 
+## Bibliografia
+
+
+  1. [Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms) <br>
+     Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein <br>
+     Terceira edição ou mais recente <br>
+     **Cópias na biblioteca, versões baratas no Abe Books**
+
+  1. [Projeto de Algoritmos](www.dcc.ufmg.br/algoritmos/) <br>
+     Nivio Ziviane <br>
+     Terceira Edição <br>
+     **Português. Cópias na biblioteca**
+
 [Slides]: https://drive.google.com/open?id=0B0ryAvcYobs0RWtXV2hWeUdSUjQ
 [Calendário]: #calendário
 [Informes]: #informes
 [TPs]: #tps
+[Bibliografia]: #bibliografia
 [Listas]: https://github.com/flaviovdf/estruturas-de-dados/listas
 [Exemplos]: https://github.com/flaviovdf/estruturas-de-dados
