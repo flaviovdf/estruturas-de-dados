@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-//Total de comparações: 1 [inicializa] + 3 * (n-2) / 2 [MinMax3 - caso impar]
+//Total de comparações: 1 [inicializa] + 3 * (n-2) / 2 [minmax3 - caso impar]
 //                      (3n - 6 + 2) / 2
 //                      (3n - 4) / 2
 //                      (3n / 2) - (4 / 2)
@@ -23,13 +23,13 @@ int inicializa(int *vec, int n, int *min, int *max) {
     }
     else {
       *min = vec[1];
-      *max = vec[0];    
+      *max = vec[0];
     }
   }
   return i;
 }
 
-void MinMax3(int *vec, int n, int *min, int *max) {
+void minmax3(int *vec, int n, int *min, int *max) {
   int i = inicializa(vec, n, min, max);
   int menorDoPar;
   int maiorDoPar;
@@ -53,17 +53,17 @@ void MinMax3(int *vec, int n, int *min, int *max) {
 
 int main() {
   srand(time(NULL)); //"inicia" o gerador de números aletórios
-  
+
   int n = 10;
-  
+
   int *vec = (int *)malloc(n * sizeof(int));
   for (int i = 0; i < n; i++) {
     vec[i] = 20 * ((double)rand() / RAND_MAX); //gera números aleatórios em C
   }
-  
+
   int min = 0;
   int max = 0;
-  MinMax3(vec, n, &min, &max);
+  minmax3(vec, n, &min, &max);
   printf("Min %d; Max %d\n", min, max);
   return 0;
 }
