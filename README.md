@@ -75,8 +75,8 @@ encontrar um local para o Union-Set.
      Terceira edição ou mais recente <br>
      **Cópias na biblioteca, versões baratas no Abe Books**
 
-  1. [Projeto de Algoritmos](www.dcc.ufmg.br/algoritmos/) <br>
-     Nivio Ziviane <br>
+  1. [Projeto de Algoritmos](http://www.dcc.ufmg.br/algoritmos/) <br>
+     Nivio Ziviani <br>
      Terceira Edição <br>
      **Português. Cópias na biblioteca**
 
