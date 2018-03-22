@@ -31,12 +31,12 @@ encontrar um local para o Union-Set.
 | 2    | 08/03/18 | Revisão C                                |              |
 | 3    | 13/03/18 | Revisão C                                |              |
 |      |          | **TADs e Complexidade**                  |              |
-| 4    | 15/03/18 | Tipos Abstrato de Dados                  |              |
+| 4    | 03/04/18 | Recursividade (Análise)                  |              |
 | 5    | 20/03/18 | Análise de Complexidade                  |              |
 | 6    | 22/03/18 | Comportamento Assintótico                |              |
 | 7    | 27/03/18 | Técnicas de Análise de Algoritmos        |              |
 | 8    | 29/03/18 | Técnicas de Análise de Algoritmos        |              |
-| 9    | 03/04/18 | Recursividade (Análise)                  |              |
+| 9    | 15/03/18 | Tipos Abstrato de Dados                  |              |
 | 10   | 05/04/18 | *Prova 1*                                |              |
 |      |          | **Estruturas Básicas**                   |              |
 | 11   | 10/04/18 | Listas                                   |              |
