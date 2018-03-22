@@ -57,11 +57,11 @@
    é uma operação que simplesmente conta o número de ocorrências de letras na
    string retornando uma nova string de tamanho menor. Por exemplo, a string:
 
-   ``` aaaaabcdddeeeffffff   abc```
+   ```aaaaabcdddeeeffffffabc```
 
    É compactada para:
 
-   ```a5b1c2d3e3f6 3a1b1c1```
+   ```a5b1c1d3e3f6a1b1c1```
 
    Sua função deve ter uma assinatura como:
 
