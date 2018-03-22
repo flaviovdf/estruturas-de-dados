@@ -183,25 +183,25 @@
       **O(n<sup>2</sup>)**.
 
    1. Um programa P executa uma função F1 com complexidade *f(n)* em 50% de suas
-      n interações, e uma função F2 com complexidade *g(n)* nas demais
+      n interações (um laço), e uma função F2 com complexidade *g(n)* nas demais
       interações. Portanto, o programa P tem complexidade
-      **O(Max (O(f(n), O(g(n)))**.
+      **O(Max(O(f(n), O(g(n)))**.
 
    1. Sejam duas funções de complexidade *g(n) = 5(n<sup>2</sup>) + 3n + 4* e
       *f(n) = 95n<sup>2</sup>* + n + 15. É correto afirmar que um programa P1
-      cuja complexidade é g(n) é mais rápido que um programa P2, com
-      complexidade f(n).
+      cuja complexidade é g(n) é mais rápido assintoticamente que um programa
+      P2, com complexidade f(n). Na prática, qual o mais rápido?
 
-1. Considerando que 0 < ε < 1 < c, indique para cada par de expressões (A, B)
-   na tabela abaixo, se B é **Ο**, **Ω**, ou **Θ** de A. Justifique suas
-   respostas.
+1. Considere que ε > 1. Para cada par de expressões (A, B) na tabela abaixo,
+   indicamos que B é **Ο**, **Ω**, ou **Θ** de A. Quais das afirmativas são corretas?
+   Justifique suas respostas.
 
    | A                          | B                                 | Complex |
    |----------------------------|-----------------------------------|----------
    | *n*                        | *3n*                              | **Θ**   |
    | *n<sup>2</sup>*            | *n*                               | **Ο**   |
    | *n*                        | *n<sup>3</sup>*                   | **Ω**   |
-   | *n<sup>4</sup> + n  + 100* | *n<sup>3</sup> + 100<sup>4</sup>* | **?**   |
-   | *2<sup>n</sup>*            | *3<sup>n/2</sup>*                 | **?**   |
-   | *c<sup>ε</sup>*            | *(c+1)<sup>ε</sup>*               | **?**   |
-   | *log(n)*                   | *sqrt(log(n))*                    | **?**   |
+   | *n<sup>4</sup> + n  + 100* | *n<sup>3</sup> + 100<sup>4</sup>* | **Ω**   |
+   | *2<sup>n</sup>*            | *3<sup>n/2</sup>*                 | **Ο**   |
+   | *c<sup>ε</sup>*            | *(c+1)<sup>ε</sup>*               | **Ω**   |
+   | *log(n)*                   | *sqrt(log(n))*                    | **Ο**   |
