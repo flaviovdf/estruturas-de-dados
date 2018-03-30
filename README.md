@@ -85,5 +85,5 @@ encontrar um local para o Union-Set.
 [Informes]: #informes
 [TPs]: #tps
 [Bibliografia]: #bibliografia
-[Listas]: https://github.com/flaviovdf/estruturas-de-dados/listas
-[Exemplos]: https://github.com/flaviovdf/estruturas-de-dados
+[Listas]: https://github.com/flaviovdf/estruturas-de-dados/tree/master/listas
+[Exemplos]: https://github.com/flaviovdf/estruturas-de-dados/tree/master/exemplos
