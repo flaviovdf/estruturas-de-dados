@@ -4,32 +4,37 @@
 #include "conta_bancaria.h"
 #include "transacao.h"
 
-double TransacaoDeMaiorValor(int n, Transacao extrato[n]) {
-    double maiorValor = extrato[0].valor;
-    for (int i = 1; i < n; i++) {
-        if (extrato[i].valor > maiorValor) {
-            maiorValor = extrato[i].valor;
-        }
-    }
-    return maiorValor;
+double transacao_de_maior_valor(int n, extrato_t extrato) {
+  double maior_valor = extrato[0].valor;
+  for (int i = 1; i < n; i++) {
+      if (extrato[i].valor > maior_valor) {
+          maior_valor = extrato[i].valor;
+      }
+  }
+  return maior_valor;
 }
 
-ContaBancaria *NovaConta(int num, double saldo) {
-    ContaBancaria *conta = malloc(sizeof(ContaBancaria));
-    conta->numero = num;
-    conta->saldo = saldo;
-    return conta;
+conta_bancaria_t *nova_conta(int num, double saldo) {
+  conta_bancaria_t *conta = malloc(sizeof(conta_bancaria_t));
+  if (conta == NULL) {
+    abort();
+  }
+  conta->numero = num;
+  conta->saldo = saldo;
+  return conta;
 }
- 
-Transacao* Deposito(ContaBancaria *conta, double valor) {
-    conta->saldo += valor;
+
+transacao_t *deposito(conta_bancaria_t *conta, double valor) {
+  conta->saldo += valor;
+  return NULL;
 }
- 
-Transacao* Saque(ContaBancaria *conta, double valor) {
-    conta->saldo -= valor;
+
+transacao_t *saque(conta_bancaria_t *conta, double valor) {
+  conta->saldo -= valor;
+  return NULL;
 }
- 
-void Imprime(ContaBancaria *conta) {
-    printf("Numero: %d\n", conta->numero);
-    printf("Saldo: %f\n", conta->saldo);
+
+void imprime_conta(conta_bancaria_t *conta) {
+  printf("Numero: %d\n", conta->numero);
+  printf("Saldo: %f\n", conta->saldo);
 }

@@ -4,37 +4,41 @@
 #include "transacao.h"
 
 #define TAMANHO_INICIAL 30
-typedef Transacao Extrato[TAMANHO_INICIAL];
+typedef transacao_t extrato_t[TAMANHO_INICIAL];
 
 typedef struct {
     int numero;
     double saldo;
-    Extrato extrato;
-} ContaBancaria;
+    extrato_t extrato;
+} conta_bancaria_t;
 
 /*
- * Cria uma nova conta bancaria com o devido número de conta e valor de 
+ * Cria uma nova conta bancaria com o devido número de conta e valor de
  * saldo.
  */
-ContaBancaria* NovaConta(int, double);
+conta_bancaria_t *nova_conta(int numero, double saldo);
 
-/* 
+/*
  * Faz um deposito e retorna a operação que identifica este deposito
  */
-Transacao* Deposito(ContaBancaria*, double);
+transacao_t *deposito(conta_bancaria_t *conta, double valor);
 
-/* 
+/*
  * Realiza um saque da conta corrente e retorna a operação que identifica o
  * saque.
  */
-Transacao* Saque(ContaBancaria*, double);
+transacao_t *saque(conta_bancaria_t * conta, double valor);
 
-/* 
+/*
  * Realiza uma transferencia entre duas contas bancarias retornando a operação
  * onde o deConta é a primeira conta e o paraConta é a segunda.
  */
-Transacao* Transferencia(ContaBancaria*, ContaBancaria*, double);
+transacao_t *transferencia(conta_bancaria_t *de_conta,
+                           conta_bancaria_t *para_conta, double valor);
 
-void ImprimeConta(ContaBancaria*);
+/*
+ * Imprime a conta bancária.
+ */
+void imprime_conta(conta_bancaria_t *conta);
 
 #endif
