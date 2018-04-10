@@ -1,11 +1,10 @@
 #include <stdlib.h>
 #include "aeds_date.h"
 
-int validaData(Data_t *data) {
-    return 1;
+int validaData(data_t *data) {
+  return 1;
 }
 
-
-Data_t *somaDataComDelta(Data_t *data, time_delta_t td) {
-    return NULL;
+data_t *soma_data_com_delta(data_t *data, time_delta_t td) {
+  return NULL;
 }
