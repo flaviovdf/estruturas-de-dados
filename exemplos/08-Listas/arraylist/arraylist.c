@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+
 #include "arraylist.h"
 
-array_list_t *createList() {
+array_list_t *create_list() {
   int *data = (int *) malloc(INIT_SIZE * sizeof(int));
   if (data == NULL) {
     printf("Error, sem memória!!");
@@ -15,43 +16,44 @@ array_list_t *createList() {
     exit(1);
   }
   list->data = data;
-  list->nElements = 0;
+  list->n_elements = 0;
   list->capacity = INIT_SIZE;
   return list;
 }
 
-void addElement(int element, array_list_t *list) {
-  if (list->nElements == list->capacity) {
+void add_element(array_list_t *list, int element) {
+  if (list->n_elements == list->capacity) {
     //Duplica tamanho da lista
-    int *newData = (int *) malloc(list->nElements * 2 * sizeof(int));
-    
+    int *new_data = (int *) malloc(list->n_elements * 2 * sizeof(int));
+    if (new_data == NULL) abort();
+
     /*
      * Outra forma de fazer, melhor! Fiz com for para o exemplo.
-     * memcpy(newData, list->data, list->nElements * sizeof(int));
+     * memcpy(new_data, list->data, list->nElements * sizeof(int));
      */
-    for (int i = 0; i < list->nElements; i++)
-      newData[i] = list->data[i];
-    
+    for (int i = 0; i < list->n_elements; i++)
+      new_data[i] = list->data[i];
+
     free(list->data);
-    list->data = newData;
-    list->capacity = list->nElements * 2;
+    list->data = new_data;
+    list->capacity = list->n_elements * 2;
   }
-  list->data[list->nElements] = element;
-  list->nElements++;
+  list->data[list->n_elements] = element;
+  list->n_elements++;
 }
 
-void destroyList(array_list_t *list) {
+void destroy_list(array_list_t *list) {
   free(list->data);
   free(list);
 }
 
-void printList(array_list_t *list) {
+void print_list(array_list_t *list) {
   int i;
-  for(i = 0; i < list->nElements; i++)
+  for(i = 0; i < list->n_elements; i++)
     printf("%d ", list->data[i]);
   printf("\n");
 }
 
-void removeLastElement(array_list_t *list) {
-  list->nElements--;
+void remove_last_element(array_list_t *list) {
+  list->n_elements--;
 }

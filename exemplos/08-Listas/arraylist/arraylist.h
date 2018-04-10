@@ -4,14 +4,15 @@
 #define INIT_SIZE 30
 
 typedef struct {
-  int nElements;
+  int *data; //data de dados em inglês
+  int n_elements;
   int capacity;
-  int *data;
 } array_list_t;
 
-array_list_t *createList();
-void addElement(int element, array_list_t *list);
-void destroyList(array_list_t *list);
-void printList(array_list_t *list);
-void removeLastElement(array_list_t *list);
+array_list_t *create_list();
+void add_element(array_list_t *list,
+                 int element);
+void destroy_list(array_list_t *list);
+void print_list(array_list_t *list);
+void remove_last_element(array_list_t *list);
 #endif
