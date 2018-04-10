@@ -1,20 +1,15 @@
 #include <stdlib.h>
 #include "complexo.h"
 
-struct ComplexoStruct add(struct ComplexoStruct x, \
-    struct ComplexoStruct y) {
-
-  struct ComplexoStruct resultado = {.real=0.0, .imaginario=0.0};
+ complexo_t add(complexo_t x, complexo_t y) {
+  complexo_t resultado = {.real=0.0, .imaginario=0.0};
   resultado.real = x.real + y.real;
   resultado.real = x.imaginario + y.imaginario;
   return resultado;
-
 }
 
-struct ComplexoStruct mult(struct ComplexoStruct x, \
-    struct ComplexoStruct y) {
-
-  struct ComplexoStruct resultado;
+ complexo_t mult(complexo_t x, complexo_t y) {
+  complexo_t resultado;
   //... código aqui
   return resultado;
 }
