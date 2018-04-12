@@ -3,7 +3,7 @@
 #include "pointerlist.h"
 
 int main(void) {
-  pointer_list_t *list = createList(&list);
+  pointer_list_t *list = createList();
   int toAdd[25]; //Usei um vetor para ter uma posição diferente de memória por i
   for (int i = 0; i < 25; i++) {
     toAdd[i] = i;
