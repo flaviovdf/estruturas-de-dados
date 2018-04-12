@@ -11,8 +11,8 @@ typedef struct {
   node_t *last;
 } pointer_list_t;
 
-pointer_list_t *createList();
-void addElement(pointer_list_t *list, void *element);
-void destroyList(pointer_list_t *list);
-void removeElement(pointer_list_t *list, int i);
+pointer_list_t *create_list();
+void add_element(pointer_list_t *list, void *element);
+void destroy_list(pointer_list_t *list);
+void remove_element(pointer_list_t *list, int i);
 #endif

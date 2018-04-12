@@ -3,22 +3,22 @@
 
 int main(void) {
   int i;
-  pointer_list_t *list = createList(&list);
+  pointer_list_t *list = create_list();
   for (i = 0; i < 25; i++)
-    addElement(i, list);
-  printList(list);
-  removeElement(list, 20);
-  printList(list);
-  removeElement(list, 0);
-  printList(list);
-  removeElement(list, 99);
-  printList(list);
-  removeElement(list, 22);
-  printList(list);
+    add_element(list, i);
+  print_list(list);
+  remove_element(list, 20);
+  print_list(list);
+  remove_element(list, 0);
+  print_list(list);
+  remove_element(list, 99);
+  print_list(list);
+  remove_element(list, 22);
+  print_list(list);
   for (i = 0; i < 25; i++) {
-    removeElement(list, 0);
-    printList(list);
+    remove_element(list, 0);
+    print_list(list);
   }
-  destroyList(list);
+  destroy_list(list);
   return 0;
 }

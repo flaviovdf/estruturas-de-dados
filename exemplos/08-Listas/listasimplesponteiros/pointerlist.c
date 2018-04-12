@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "pointerlist.h"
 
-pointer_list_t *createList() {
+pointer_list_t *create_list() {
   pointer_list_t *list = (pointer_list_t *) malloc(sizeof(pointer_list_t));
   if (list == NULL) {
     printf("Error, sem memória!!");
@@ -13,15 +13,15 @@ pointer_list_t *createList() {
   return list;
 }
 
-void addElement(int element, pointer_list_t *list) {
+void add_element(pointer_list_t *list, int element) {
   node_t *toVisit = list->first;
   int isFirst = 0;
   if (toVisit == NULL)
     isFirst = 1;
-  
+
   while (isFirst == 0 && toVisit->next != NULL)
     toVisit = toVisit->next;
-  
+
   node_t *new = (node_t *) malloc(sizeof(node_t));
   if (new == NULL) {
     printf("Error, sem memória!!");
@@ -29,17 +29,17 @@ void addElement(int element, pointer_list_t *list) {
   }
   new->info = element;
   new->next = NULL;
-  
+
   if (list->last != NULL) //Cria pointeiro para novo elemento
     list->last->next = new;
-  
+
   //Atualize first e last
   list->last = new;
   if (isFirst == 1)
     list->first = new;
 }
 
-void destroyList(pointer_list_t *list) {
+void destroy_list(pointer_list_t *list) {
   node_t *toVisit = list->first;
   node_t *toFree;
   while (toVisit != NULL) {
@@ -50,7 +50,7 @@ void destroyList(pointer_list_t *list) {
   free(list);
 }
 
-void printList(pointer_list_t *list) {
+void print_list(pointer_list_t *list) {
   node_t *toVisit = list->first;
   while (toVisit != NULL) {
     printf("%d ", toVisit->info);
@@ -59,7 +59,7 @@ void printList(pointer_list_t *list) {
   printf("\n");
 }
 
-void removeElement(pointer_list_t *list, int i) {
+void remove_element(pointer_list_t *list, int i) {
   node_t *toFree = list->first;
   node_t *prev = NULL;
   int curr = 0;
@@ -70,19 +70,19 @@ void removeElement(pointer_list_t *list, int i) {
     toFree = toFree->next;
     curr++;
   }
-  
+
   if (toFree == NULL) //Lista Vazia
     return;
-  
+
   //Atualiza ponteiros
   if (toFree == list->first)
     list->first = toFree->next;
   if (toFree == list->last)
     list->last = prev;
-  
+
   if (prev != NULL)
     prev->next = toFree->next;
-  
+
   //Free!
   free(toFree);
 }
