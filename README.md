@@ -58,12 +58,11 @@ encontrar um local para o Union-Set.
 |      |          | **Busca**                                |              |
 | 24   | 05/06/18 | Árvores Balanceadas (AVL)                |              |
 | 25   | 07/06/18 | Árvores Balanceadas (R&B)                |              |
-|      | 12/06/18 | *Feriado*                                |              |
-| 26   | 19/06/18 | Árvores N-ary (BTree)                    |              |
-| 27   | 21/06/18 | Hashing                                  |              |
-| 28   | 26/06/18 | Hashing                                  |              |
-| 29   | 28/06/18 | *Prova 4*                                |              |
-| 30   | 03/07/18 | *Reposição*                              |              |
+| 26   | 12/06/18 | Árvores N-ary (BTree)                    |              |
+| 27   | 14/06/18 | Hashing                                  |              |
+| 28   | 19/06/18 | Hashing                                  |              |
+| 29   | 21/06/18 | *Prova 4*                                |              |
+| 30   | 26/06/18 | *Reposição*                              |              |
 
 ## TPs
 
