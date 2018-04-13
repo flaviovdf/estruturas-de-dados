@@ -3,13 +3,15 @@
 #include "pointerlist.h"
 
 pointer_list_t *create_list() {
-  pointer_list_t *list = (pointer_list_t *) malloc(sizeof(pointer_list_t));
+  pointer_list_t *list = \
+    (pointer_list_t *) malloc(sizeof(pointer_list_t));
   if (list == NULL) {
     printf("Error, sem memória!!");
     exit(1);
   }
   list->first = NULL;
   list->last = NULL;
+  list->size = 0;
   return list;
 }
 
@@ -37,6 +39,7 @@ void add_element(pointer_list_t *list, int element) {
   list->last = new;
   if (isFirst == 1)
     list->first = new;
+  list->size++;
 }
 
 void destroy_list(pointer_list_t *list) {
@@ -84,5 +87,31 @@ void remove_element(pointer_list_t *list, int i) {
     prev->next = toFree->next;
 
   //Free!
+  list->size--;
   free(toFree);
+}
+
+
+void add_at(pointer_list_t *list, int element, int pos) {
+  node_t *new = (node_t *) malloc(sizeof(node_t));
+  if (new == NULL) {
+    exit(1);
+  }
+  new->info = element;
+  if (list->first == NULL) {
+    list->first = new;
+    list->last = new;
+    new->next = NULL;
+    return;
+  }
+  node_t *prev = list->first;
+  for (int i = 0; i < pos-1 && prev->next != NULL; i++) {
+    prev = prev->next;
+  }
+  if (prev == list->last) {
+    list->last = new;
+  }
+  new->next = prev->next;
+  prev->next = new;
+  list->size++;
 }
