@@ -40,7 +40,7 @@ encontrar um local para o Union-Set.
 | 10   | 05/04/18 | *Prova 1*                                |              |
 |      |          | **Estruturas Básicas**                   |              |
 | 11   | 10/04/18 | Listas                                   |              |
-| 12   | 12/04/18 | Filas e Pilhas                           |              |
+| 12   | 12/04/18 | Listas                                   |              |
 | 13   | 17/04/18 | Filas e Pilhas                           |              |
 | 14   | 19/04/18 | Árvores                                  |              |
 | 15   | 24/04/18 | Árvores                                  |              |
