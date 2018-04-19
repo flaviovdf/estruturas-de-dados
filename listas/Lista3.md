@@ -6,22 +6,6 @@
 
 # Lista de Exercícios - Prova 3
 
-## Árvores
-
-1. Implemente uma árvore binária
-
-1. Implemente os algoritmos de caminhamento na árvore acima
-
-1. Após criar sua árvore, implemente uma função que retorna 1 caso um
-   elemento passo `n` existe na árvore. `hasElement(tree_t *tree, int n)`.
-
-1. Implemente um código para remover elementos de uma árvore.
-
-1. Ache o menor elemento em uma árvore.
-
-1. Como computar a altura de uma árvore? Isto é, quantos níveis abaixo da
-   raiz existem? Tal código pode ser feito com poucas linhas + recursividade.
-
 ## Insertion Sort, Selection Sort, Bubble Sort
 
 1. Implemente um BubbleSort otimizado. Veja os slides para a definição do
