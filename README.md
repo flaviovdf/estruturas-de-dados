@@ -56,11 +56,12 @@ encontrar um local para o Union-Set.
 | 23   | 24/05/18 | *Prova 3*                                |              |
 |      | 31/05/18 | *Feriado*                                |              |
 |      |          | **Busca**                                |              |
+|      | 29/05/18 | *Greve Caminhoneiros*                    |              |
 | 24   | 05/06/18 | Árvores Balanceadas (AVL)                |              |
 | 25   | 07/06/18 | Árvores Balanceadas (R&B)                |              |
-| 26   | 12/06/18 | Árvores N-ary (BTree)                    |              |
-| 27   | 14/06/18 | Hashing                                  |              |
-| 28   | 19/06/18 | Hashing                                  |              |
+| 27   | 12/06/18 | Hashing                                  |              |
+| 28   | 14/06/18 | Hashing                                  |              |
+| 26   | 19/06/18 | Árvores B (2-3, 2-3-4)                   |              |
 | 29   | 21/06/18 | *Prova 4*                                |              |
 | 30   | 26/06/18 | *Reposição*                              |              |
 
