@@ -49,5 +49,4 @@
    executar todas as operações.
 1. Você planeja inserir 1000 itens em uma tabela hash e quer um número médio de
    2 acessos em uma busca com sucesso. Qual o tamanho do array interno que você
-   pode utilizar considerando que a tabela tem endereçamento fechado e usa
-   chianino para resolver os conflitos?
+   pode utilizar considerando que a tabela tem endereçamento fechado?
