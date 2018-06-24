@@ -64,8 +64,8 @@ encontrar um local para o Union-Set.
 | 26   | 19/06/18 | Árvores B (2-3, 2-3-4)                   |              |
 | 29   | 21/06/18 | *Prova 4*                                |              |
 |  -   | 26/06/18 | *Reposição*                              |              |
-| 30   | 03/07/18 | Entrevistas TP                           |              |
-| 31   | 05/07/18 | Entrevistas TP                           |              |
+|      | 03/07/18 |                                          |              |
+| 30   | 05/07/18 | Entrevistas TP                           |              |
 |  -   | 09/07/18 | **07:30 sala 2010** *Especial*           |              |
 
 ## TPs
